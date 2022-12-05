@@ -1,0 +1,42 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0px solid transparent;
+}
+.nav-buttons{
+        overflow: hidden;
+        background-color: transparent;
+        list-style-type: none;
+        margin: 0;
+}
+.nav-buttons a{
+    float: right;
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logo1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-size: auto;
+}
+
+body{
+    background-color: rgba(0, 0, rgb(66, 66, 106), alpha);
+}
+
+
+@media screen and (max-width: 600px) {
+    .nav-buttons a{
+      font-size: 30px;
+      justify-content: center;
+      align-content: center;
+      display: flex;
+    }
+  }
