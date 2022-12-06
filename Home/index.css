@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: green;
-}
+
 
 #nav {
   display: inline-flex;
@@ -25,6 +23,12 @@ body {
   background-size: auto;
   margin-bottom: 40px;
   min-height: 100vh;
+}
+.sites{
+  display: flex;
+  justify-content: end;
+  font-size: 30px;
+  
 }
 
 #home {
