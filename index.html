@@ -5,26 +5,218 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
+    <section id="home">
+      <nav class="navbar">
+        <div id="nav" class="container-fluid">
+          <ul>
+            <a class="navbar-brand" href="#">Product</a>
+            <a class="navbar-brand" href="admin.html">Admin</a>
+            <a class="navbar-brand" href="#">Checkout</a>
+          </ul>
+        </div>
+      </nav>
+      <div class="logo1">
+        <img class="logo" src="./picwish.png" alt="" style="width: 100%" />
+      </div>
+      <br />
+      <h1 id="" class="pushing-p">Products</h1>
       <section>
-        <header class="navbar">
-          <div class="nav-buttons">
-            <ul>
-              <a href="checkout.html" class="next" &raquo>Checkout</a>
-              <a href="admin.html" class="next" &raquo>Admin</a>
-              <a href="index.html" class="next" &raquo>Products</a>
-            </ul>
+        <div class="page">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="column">
+                  <div class="cards">
+                    <p>
+                      <img
+                        src="./xboxseriesx_cnslcntlr_anl_rgb_afdf.jpg"
+                        alt=""
+                        srcset=""
+                        class="img1"
+                      />
+                    </p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="cards">
+                    <p>
+                      <img
+                        src="./Nintendo-Switch-Console-Docked-wJoyConRB.jpg"
+                        alt=""
+                        srcset=""
+                        class="img2"
+                      />
+                    </p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="cards">
+                    <p>
+                      <img
+                        src="./41xi6hImxbL._SX450_.jpg"
+                        alt=""
+                        srcset=""
+                        class="img3"
+                      />
+                    </p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="cards">
+                    <p>
+                      <img src="./ps5.webp" alt="" srcset="" class="img4" />
+                    </p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="column">
+                  <div class="cards">
+                    <p>
+                      <img
+                        src="./Ragnarok-ps5.webp"
+                        alt=""
+                        srcset=""
+                        class="img1"
+                      />
+                    </p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="cards">
+                    <p>
+                      <img
+                        src="./FIFA-23-Xbox-Series-X.jpg"
+                        alt=""
+                        srcset=""
+                        class="img2"
+                      />
+                    </p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="cards">
+                    <p>
+                      <img
+                        src="./Call-of-Duty-MW-2.webp"
+                        alt=""
+                        srcset=""
+                        class="img3"
+                      />
+                    </p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="cards">
+                    <p>
+                      <img
+                        src="./Guide-21.webp"
+                        alt=""
+                        srcset=""
+                        class="img4"
+                      />
+                    </p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-show">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-show">Next</span>
+            </button>
           </div>
-        </header>
-      </section>
-      <section>
-        <div class="logo1">
-          <img class="logo" src="./picwish.png" alt="" />
         </div>
       </section>
-    </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </section>
+    <section id="footer">
+      <div class="container">
+        <footer class="foot foot1">
+          <ul>
+            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#">Product</a>
+            <a class="navbar-brand" href="admin.html">Admin</a>
+            <a class="navbar-brand" href="#">Checkout</a>
+          </ul>
+          <br>
+          <span><p class="game">&copy;Game Box || est.2022 <ion-icon class="icon" name="game-controller-outline"></ion-icon><ion-icon class="icon" name="cube-outline"></ion-icon></p></span>
+        </footer>
+      </div>
+    </section>
   </body>
 </html>

@@ -1,42 +1,158 @@
-.navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border: 0px solid transparent;
-}
-.nav-buttons{
-        overflow: hidden;
-        background-color: transparent;
-        list-style-type: none;
-        margin: 0;
-}
-.nav-buttons a{
-    float: right;
-    display: block;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo1{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-size: auto;
+body {
+  background-color: green;
 }
 
-body{
-    background-color: rgba(0, 0, rgb(66, 66, 106), alpha);
+#nav {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: transparent;
 }
 
+.logo1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-size: auto;
+  margin-bottom: 40px;
+  min-height: 100vh;
+}
+
+#home {
+  background-image: linear-gradient(blue, aqua);
+  background-size: cover;
+  min-height: 200vh;
+}
+#carouselExampleControls {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.pushing-p {
+  text-align: center;
+}
+
+.foot {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+.foot1 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+.foot ul a {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 16px 14px;
+}
+#footer {
+  background-color: aqua;
+}
+footer {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.game {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.icon {
+  color: black;
+}
+#nav a:hover {
+  background-color: rgba(16, 16, 16, 0.559);
+  color: white;
+  transition: 0.8s;
+  border-radius: 5px;
+}
+.column {
+  float: left;
+  width: 24.2%;
+  padding: 4px 10px;
+  border: 1px solid black;
+  margin: 3px;
+  border-radius: 5px;
+  background-image: linear-gradient(blue, aqua);
+}
+.row {
+  margin: 0 -5px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+  padding: 16px;
+  text-align: center;
+  background-image: linear-gradient(blue, aqua);
+}
+.img4 {
+  width: 100%;
+  border-radius: 4px;
+}
+.img3 {
+  width: 100%;
+  border-radius: 4px;
+}
+.img2 {
+  width: 100%;
+  border-radius: 4px;
+}
+.img1 {
+  width: 100%;
+  border-radius: 4px;
+}
+.product {
+  text-align: center;
+}
+.visually-show,
+.carousel-control-next-icon,
+.carousel-control-previous-icon:hover {
+  color: black;
+}
+.foot ul a:hover {
+  background-color: rgba(16, 16, 16, 0.559);
+  color: white;
+  transition: 0.8s;
+  border-radius: 5px;
+}
 
 @media screen and (max-width: 600px) {
-    .nav-buttons a{
-      font-size: 30px;
-      justify-content: center;
-      align-content: center;
-      display: flex;
-    }
+  .nav-buttons a {
+    font-size: 30px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
   }
+}
+
+@media screen and(max-width: 600px) {
+  .column {
+    width: 24;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  #carouselExampleControls {
+    width: 100%;
+    display: grid;
+    align-items: center;
+  }
+}
+@media screen and(min-width: 500px) {
+  .logo1 {
+    margin-top: 100px;
+  }
+}
