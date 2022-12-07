@@ -43,7 +43,7 @@
   min-height: 200vh;
 }
 
-.column button{
+.card button{
     border-radius: 20px;
     height: 40px;
     width: 100px;
@@ -97,28 +97,17 @@ footer {
   transition: 0.8s;
   border-radius: 5px;
 }
-.column {
-  float: left;
-  width: 24.2%;
-  padding: 4px 10px;
-  border: 1px solid black;
-  margin: 3px;
+.row {
   border-radius: 5px;
   background-image: linear-gradient(blue, aqua);
 }
-.row {
-  margin: 0 -5px;
-}
+
 .row::after {
   content: "";
   display: table;
   clear: both;
 }
-.card {
-  padding: 16px;
-  text-align: center;
-  background-image: linear-gradient(blue, aqua);
-}
+
 .img4 {
   width: 100%;
   border-radius: 4px;
