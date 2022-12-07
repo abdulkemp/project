@@ -7,6 +7,7 @@
 #checkout {
     background-color: rgb(59, 180, 180);
     background-size: cover;
+    min-height: 50vh;
 }
 
 
