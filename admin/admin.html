@@ -42,101 +42,115 @@
         </nav>
       </section>
       <section>
-        <div class="but">
-          <button
-            type="button"
-            class="btn btn-primary btn-lg"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            Add
-          </button>
-          <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
-                    Add Game/Console
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div class="adding">
-                    <div>
-                      <input type="text" placeholder="Name" />
+        <td>
+          <form
+                    id="gaming"
+                    class="row"
+                    autocomplete="off"
+                    onsubmit="onFormSubmit()"
+                  >
+          <div class="but">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Add
+            </button>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Add Game/Console
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                    <div class="modal-body">
+                      <div class="adding">
+                        <div>
+                          <label for="name"></label>
+                          <input
+                            class="info"
+                            id="name"
+                            type="text"
+                            placeholder="Name"
+                            required
+                          />
+                        </div>
+                        <div>
+                          <label for="model"></label>
+                          <input
+                            class="info"
+                            id="model"
+                            type="text"
+                            placeholder="Model"
+                          />
+                        </div>
+                        <div>
+                          <label for="price"></label>
+                          <input
+                            class="info"
+                            id="price"
+                            type="number"
+                            placeholder="Price"
+                            required
+                          />
+                        </div>
+                      </div>
                     </div>
-                    <div>
-                      <input type="text" placeholder="Model" />
-                    </div>
-                    <div>
-                      <input type="text" placeholder="Price" />
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <input
+                        type="submit"
+                        value="submit"
+                        class="btn btn-primary"
+                      />
                     </div>
                   </div>
                 </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Save changes
-                  </button>
-                </div>
               </div>
+              <button type="button" class="btn btn-secondary btn-lg">
+                <a class="navbar-brand" href="../Home/index.html">Back</a>
+              </button>
             </div>
-          </div>
-          <button type="button" class="btn btn-secondary btn-lg">
-            <a class="navbar-brand" href="../Home/index.html">Back</a>
-          </button>
-        </div>
-        <div class="admin2">
-        <div class="container1">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-    </div>
+            
+            <table class="table" id="info">
+              <tbody>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th id="name">Name</th>
+                    <th id="model">Model</th>
+                    <th id="price">Price</th>
+                    <th>Edit/Delete</th>
+                  </tr>
+                </thead>
+              </tbody>
+            </table>
+          </form>
+        </td>
       </section>
     </section>
+    <script src="./admin.js"></script>
+    </html>
+    
   </body>
-</html>

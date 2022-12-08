@@ -54,11 +54,11 @@
           <button
             class="btn btn-secondary dropdown-toggle"
             type="button"
-            id="dropdownMenuButton1"
+            id="dropdownMenuButton1 item"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Product Filter
+            <label for="product">Product Filter</label>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             <li><a class="dropdown-item" href="#">All</a></li>
@@ -68,11 +68,11 @@
           <button
             class="btn btn-secondary dropdown-toggle"
             type="button"
-            id="dropdownMenuButton1"
+            id="dropdownMenuButton1 cost"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Price Filter
+            <label for="cost">Price Filter</label>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             <li><a class="dropdown-item" href="#">R1 000.00 - R1 200.00</a></li>
@@ -88,118 +88,7 @@
         </div>
         <br />
         <div class="row row-cols-1 row-cols-md-2 g-4" style="width: 100%">
-          <div class="col">
-            <div class="card">
-              <img
-                src="../Home/images/xboxseriesx_cnslcntlr_anl_rgb_afdf.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Xbox Series X</h5>
-                <p class="card-text">R11 999.00</p>
-                <button onclick="xbox()">Add to cart</button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="../Home/images/Nintendo-Switch-Console-Docked-wJoyConRB.jpg"
-                class="card-img-top"
-                alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Nintendo Switch</h5>
-                  <p class="card-text">8 499.00</p>
-                  <button onclick="xbox()">Add to cart</button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="../Home/images/41xi6hImxbL._SX450_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Gaming PC</h5>
-                <p class="card-text">R4 320.00</p>
-                <button onclick="xbox()">Add to cart</button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="../Home/images/ps5.webp"
-                class="card-img-top"
-                alt="..."
-                />
-              <div class="card-body">
-                <h5 class="card-title">Playstaion 5</h5>
-                <p class="card-text">R17 999.00</p>
-                <button onclick="xbox()">Add to cart</button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="../Home/images/Ragnarok-ps5.webp"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">GOW - Ragnorok</h5>
-                <p class="card-text">R1 369.00</p>
-                <button onclick="xbox()">Add to cart</button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-              src="../Home/images/Call-of-Duty-MW-2.webp"
-              class="card-img-top"
-              alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Call Of Duty - MW2</h5>
-                <p class="card-text">R1 379.00</p>
-                <button onclick="xbox()">Add to cart</button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-              src="../Home/images/FIFA-23-Xbox-Series-X.jpg"
-              class="card-img-top"
-              alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">FIFA 23</h5>
-                <p class="card-text">R1 069.00</p>
-                <button onclick="xbox()">Add to cart</button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-              src="../Home/images/Guide-21.webp"
-              class="card-img-top"
-              alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Nintendo - Deluxe</h5>
-                <p class="card-text">R1 000.00</p>
-                <button onclick="xbox()">Add to cart</button>
-              </div>
-            </div>
-          </div>
+          <div id="list" class="list"></div>
         </div>
       </section>
       <br />

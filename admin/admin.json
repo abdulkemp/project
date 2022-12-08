@@ -1,3 +1,42 @@
-{
-    
-}
+[
+    {
+        "Name" : "Xbox",
+        "Model": "Series X",
+        "Price": "R11 999.00"
+    },
+    {
+        "Name" : "Nintendo",
+        "Model": "Switch",
+        "Price": "R8 499.00"
+    },
+    {
+        "Name" : "Pc",
+        "Model": "Gaming PC",
+        "Price": "R4 320.00"
+    },
+    {
+        "Name" : "Playstion",
+        "Model": 5,
+        "Price": "R17 999.00"
+    },
+    {
+        "Name" : "God Of War",
+        "Model": "Ragnorok",
+        "Price": "R1 369.00"
+    },
+    {
+        "Name" : "Call Of Duty",
+        "Model": "Modern Warefare 2",
+        "Price": "R1 379.00"
+    },
+    {
+        "Name" : "FIFA",
+        "Model": 23,
+        "Price": "R1 069.00"
+    },
+    {
+        "Name" : "MarioKart",
+        "Model": "Deluxe",
+        "Price": "R1 000.00"
+    }
+]

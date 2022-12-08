@@ -21,18 +21,21 @@
   min-height: 10vh;
 }
 
-.container1{
+.table{
     background-color: rgb(208, 207, 207);
     border: 1px solid black;
+    min-height: 72.8vh;
 }
 
 #admin1{
     background-color: rgb(59, 180, 180);
 }
-.admin2{
-    background-color: rgb(59, 180, 180);
-    min-height: 72.8vh;
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .but{
     display: flex;
     justify-content: center;
