@@ -4,14 +4,13 @@
     box-sizing: border-box;
 }
 
-#checkout {
-    background-color: rgb(59, 180, 180);
-    background-size: cover;
-    min-height: 50vh;
+#body{
+    background-image: linear-gradient(pink, blue);
+    min-height: 100vh;
 }
 
 
-#nav {
+.nav {
     display: inline-flex;
     justify-content: center;
     align-content: center;
@@ -21,7 +20,7 @@
     background-color: transparent;
 }
 
-#nav a:hover {
+.nav a:hover {
     background-color: rgba(16, 16, 16, 0.559);
     color: white;
     transition: 0.8s;
@@ -29,20 +28,29 @@
 }
 
 
-#check{
-    padding: 14px 16px;
-    display: flex;
-   justify-content: center;
-   min-height: 200vh;
-   background-color: rgb(59, 180, 180);
-   background-size: cover;
-}
-.table,
-th,
-td {
-    border: 1px solid black;
-    background-color: rgb(214, 205, 205);
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-}
+
+.col-25 {
+    -ms-flex: 25%; 
+    flex: 25%;
+    padding: 0 16px;
+  }
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin-top: 100px;
+  }
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  @media (max-width: 800px) {
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }

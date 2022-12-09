@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "Name": "Xbox",
+    "Model": "Series X",
+    "Price": 11999
+},
+{
+    "id": 1,
+    "Name": "Nintendo",
+    "Model": "Switch",
+    "Price": 8499
+},
+{
+    "id": 2,
+    "Name": "Pc",
+    "Model": "Gaming PC",
+    "Price": 4320
+},
+{
+    "id": 3,
+    "Name": "Playstion",
+    "Model": 5,
+    "Price": 17999
+},
+{
+    "id": 4,
+    "Name": "God Of War",
+    "Model": "Ragnorok",
+    "Price": 1369
+},
+{
+    "id": 5,
+    "Name": "Call Of Duty",
+    "Model": "Modern Warefare 2",
+    "Price": 1379
+},
+{
+    "id": 6,
+    "Name": "FIFA",
+    "Model": 23,
+    "Price": 1069
+},
+{
+      "id": 7,
+      "Name": "MarioKart",
+      "Model": "Deluxe",
+      "Price": 1000
+    }
+]
