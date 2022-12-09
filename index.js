@@ -68,9 +68,9 @@ Object.keys(ind).forEach((game) => {
         <div class="card-body">
             <h5 class="card-title">${collect.Name}</h5>
             <h5 class="card-title">${collect.Model}</h5>
-            <p class="card-text">R ${collect.Price}.00</p>
-            <button onclick()>Add to cart</button>
-        </div>
+            <p class="card-text">R ${collect.Price}.00</p>` + 
+            "<button id='record' onclick='addToCart(items)'>Add to cart</button>" +
+        `</div>
         </div>
     </div>
     `

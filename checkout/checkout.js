@@ -53,62 +53,21 @@ localStorage.setItem(
 );
 
 let type = JSON.parse(localStorage.getItem("check"));
+console.log(type);
 
-let info = [...new Set(item.map((item)=>
-    {return item}))]
-
-    let x = 0;
-    document.getElementById('collect').innerHTML = item.map((item)=>
-    {
-        var {Name, Model, Price} = item;
-        return(`
-        <div class="col">
-        <div class="card">
-        <img
-            src=""
-            class="card-img-top"
-            alt="..."
-        />
-        <div class="card-body">
-            <h5 class="card-title">${Name}</h5>
-            <h5 class="card-title">${Model}</h5>
-            <p class="card-text">${Price}</p>` + 
-            "<button onclick='addItems("+(x++)+")'>Add to cart</button>" +
-       `</div>
-        </div>
-    </div>
-    `)
-    }).join('')
-
-var checkings = [];
-
-function showItems(b) {
-  let x = 0;
-  if (checkings.length == 0) {
-    document.querySelector(checkingsItem).innerHTML =
-      "Collect some items first";
-  } else {
-    document.querySelector(checkingsItem).innerHTML = checkings.map((items) => {
-      var { Name, Model, Price } = items;
-      return (
-        `<div id="checkingsItem">
-                      <h3>Checkout</h3>
-                      <p>${Name} ${Model}<span class="price">R ${Price}.00</span></p>
-                      <p>${Name} ${Model}<span class="price">R ${Price}.00</span></p>
-                      <p>${Name} ${Model}<span class="price">R ${Price}.00</span></p>
-                      <p>${Name} ${Model}<span class="price">R ${Price}.00</span></p>
-                      <hr />
-                      <p>
-                        Total <span class="price" style="color: black"><b>412</b></span>
-                      </p>` +
-        "<ion-icon name='trash-outline' onclick='delElement(" +
-        x++ +
-        ")'></ion-icon></div>"
-      );
-    }).join('');
-  }
-}
-function addItems(b) {
-    showItems.push({...info[b]})
-    checkings();
-}
+Object.keys(type).forEach((game) => {
+  let collect = type[game];
+  let d = document.querySelector("#cart");
+  console.log(type[game]);
+  d.innerHTML += `
+    <div class="container">
+              <div id="collect">
+                <h3>Checkout</h3>
+                <p>${collect.Name}-${collect.Model}<span class="price">R ${collect.Price}.00</span></p>
+                <hr />
+                <p>
+                  Total <span class="price" style="color: black"><b></b></span>
+                </p>
+              </div>
+            </div>`;
+});
