@@ -14,14 +14,6 @@
   background-color: transparent;
 }
 
-.logo1 {
-  /* display: flex;
-  justify-content: center;
-  align-content: center;
-  background-size: auto; */
-  /* margin-bottom: 40px;
-  min-height: 100vh; */
-}
 .sites{
   display: flex;
   justify-content: end;
@@ -62,16 +54,35 @@
 .foot {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
+  /* border: 2px solid orangered; */
+  width: 100%;
 }
-.foot1 {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
+
+ul li {
+  list-style: none;
 }
-.foot ul a {
+
+.linkss {
+  /* width: 100%;
+  border: 2px solid yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.linkss ul {
+  width: 100%;
+  /* border: 2px solid green; */
+  padding-left: 0;
+}
+
+
+.foot ul li a {
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 16px 14px;
+  padding: 16px ;
+  /* border: 2px solid black; */
 }
 .game{
     display: flex;
@@ -80,12 +91,7 @@
 }
 #footer {
   background-color: rgb(14, 205, 205);
-}
-footer {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  /* border: 2px solid red; */
 }
 .game {
   font-size: 20px;
@@ -102,12 +108,19 @@ footer {
 }
 .row {
   border-radius: 5px;
+  width: 100%;
+  padding-left: 7rem;
+  padding-right: 7rem;
 }
 
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
+#gaming .col{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#gaming .col .card{
+  width: 22rem;
 }
 
 .img4 {
@@ -141,12 +154,40 @@ footer {
   border-radius: 5px;
 }
 
+
+
 @media screen and (max-width: 600px) {
   .nav-buttons a {
     font-size: 30px;
     justify-content: center;
     align-content: center;
     display: flex;
+  }
+  #gaming .col .card{
+    width: 22rem;
+  }
+  .row {
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media screen and (min-width: 820px) {
+  .nav-buttons a {
+    font-size: 30px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+  }
+  #gaming .col .card{
+    width: 22rem;
+  }
+  .row {
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 

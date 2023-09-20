@@ -49,30 +49,39 @@ localStorage.setItem('games', JSON.stringify([
     }
 ]));
 
-let ind = JSON.parse(localStorage.getItem('games'));
+let products = JSON.parse(localStorage.getItem('games'));
+let checkoutList = JSON.parse(localStorage.getItem('checkout')) ? JSON.parse(localStorage.getItem('checkout')) : [] ;
 
-console.log(ind);
+console.log(products);
 
-Object.keys(ind).forEach((game) => {
-    let collect = ind[game];
+
+Object.keys(products).forEach((game) => {
+    let gamelist = products[game];
     let d = document.querySelector('#gaming');
-    console.log(ind[game]);
+    console.log(products[game]);
     d.innerHTML += `
     <div class="col">
         <div class="card">
         <img
-            src="${collect.img}"
+            src="${gamelist.img}"
             class="card-img-top"
             alt="..."
         />
         <div class="card-body">
-            <h5 class="card-title">${collect.Name}</h5>
-            <h5 class="card-title">${collect.Model}</h5>
-            <p class="card-text">R ${collect.Price}.00</p>` + 
-            "<button id='record' onclick='addToCart(items)'>Add to cart</button>" +
-        `</div>
+            <h5 class="card-title">${gamelist.Name}</h5>
+            <h5 class="card-title">${gamelist.Model}</h5>
+            <p class="card-text">R ${gamelist.Price}.00</p>
+            <button id='record' onclick='addToCheck(${JSON.stringify(gamelist)})'>Add to cart</button>
+        </div>
         </div>
     </div>
     `
 
 })
+
+function addToCheck(gamelist) {
+    checkoutList.push(gamelist);
+    localStorage.setItem('checkout', JSON.stringify(checkoutList))
+    console.log(checkoutList);
+    alert("Item added to cart")
+  }
